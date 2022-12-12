@@ -261,7 +261,7 @@ button:not(:disabled),
   .container-sm, .container {
       max-width: 540px;
   }
-}
+
 
   .container-md, .container-sm, .container {
     max-width: 720px;
@@ -271,7 +271,7 @@ button:not(:disabled),
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
   }
-
+}
 
 .col {
   flex: 1 0 0%;
@@ -391,6 +391,7 @@ button:not(:disabled),
     -webkit-transition: none;
     transition: none;
   }
+}
 
 textarea.form-control {
   min-height: calc(1.5em + 0.75rem + 2px);
@@ -650,7 +651,7 @@ textarea.form-control {
   .p-lg-5 {
     padding: 3rem !important;
   }
-
+  
   .card {
     position: relative;
     display: flex;
@@ -661,11 +662,12 @@ textarea.form-control {
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
-}
-.card-body {
-  flex: 1 1 auto;
-  padding: 1rem 1rem;
-}
+    
+  }
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+  }
 
 .card-footer {
   padding: 0.5rem 1rem;
@@ -750,4 +752,51 @@ textarea.form-control {
 
 .complete {
   display: none;
+}
+.read-more-container{
+  display: flex;
+  flex-direction: column;
+  color: #111;
+  gap: 1rem;
+}
+
+.read-more-btn{
+  color: #0984e3;
+}
+
+.read-more-text{
+  display: none;
+}
+
+.read-more-text--show{
+  display: inline;
+}
+ion-icon {
+  color: rgb(64, 64, 129);
+  font-size: 30px;
+  text-decoration: none;
+  margin: 0 5px;
+}
+ion-icon:hover{
+  color: darkslategray;
+}
+.social { 
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 720px) {
+  .card-body {
+    margin: auto;
+  }
+  .row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container,{
+    width: 200px;
+    height: 250px;
+  }
 }
